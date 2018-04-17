@@ -59,11 +59,11 @@ EXAMPLE
 	sweeprate:2.00000000000000000000
 
 	Then browse through the 'BODY' blocks of sweep data to locate and
-	delete the unwanted sweep sets. Each sweep set consists of 6 blocks,
-	labelled 'gtag', 'atag' and 'indx', followed by 3 blocks labelled
-	'alvl', one for each of the three antennas. Locate the 'alvl' blocks
-	that contain unusually small amplitudes, caused by a change in
-	receiver configuration. Delete all 6 blocks of each sweep set between
+	delete the unwanted sweep sets. Each sweep set consists of 7 blocks,
+	labelled 'gtag', 'atag', 'indx' and 'scal', followed by 3 blocks
+	labelled 'alvl', one for each of the three antennas. Locate the 'alvl'
+	blocks that contain unusually small amplitudes, caused by a change in
+	receiver configuration. Delete all 7 blocks of each sweep set between
 	the 'BODY' block and the desired receiver configuration.
 
 	Convert the modified text file into a binary timeseries file:
